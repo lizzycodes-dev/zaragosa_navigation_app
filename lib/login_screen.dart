@@ -18,7 +18,9 @@ class _LoginScreenState extends State<LoginScreen> {
   bool hidePassword = true;
 
   void login() {
-    if (!formKey.currentState!.validate()) return;
+    if (!formKey.currentState!.validate()) {
+      return;
+    }
 
     final isValid = DemoAuth.login(
       usernameController.text.trim(),
@@ -26,9 +28,9 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     if (isValid) {
-      Navigator.of(
-        context,
-      ).pushReplacement(MaterialPageRoute(builder: (_) => const MainScreen()));
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const MainScreen()),
+      );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Invalid username or password.')),
