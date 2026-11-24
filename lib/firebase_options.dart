@@ -56,7 +56,6 @@ class DefaultFirebaseOptions {
     projectId: 'zaragosa-student-app',
     storageBucket: 'zaragosa-student-app.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAobDeMRBsKw_BWRh4v1fFuxxlnFp_lZ4c',
     appId: '1:295093381316:ios:cf5c17f88bf0d027f20191',
@@ -65,7 +64,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'zaragosa-student-app.firebasestorage.app',
     iosBundleId: 'com.example.zaragosaNavigationApp',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAobDeMRBsKw_BWRh4v1fFuxxlnFp_lZ4c',
     appId: '1:295093381316:ios:cf5c17f88bf0d027f20191',
